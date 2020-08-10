@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+$text-color__primary: rgb(70, 87, 101);
+$text-color__secondary: rgb(54, 67, 79);
+
+$bg-color__primary: rgb(245, 245, 245);
+$bg-color__secondary: rgb(29, 38, 54);
+
+.f-w--6 {
+  font-weight: 600;
+}
+
+body {
+  background-color: #fefefe;
+}
+// custom form
+
+.form-custom {
+  .form-control {
+    &::placeholder {
+      color: fade($text-color__primary, 60);
+    }
+  }
+
+  label {
+    color: fade($text-color__primary, 90);
+  }
+}
+
+.error-text {
+  font-size: 0.8rem;
+}

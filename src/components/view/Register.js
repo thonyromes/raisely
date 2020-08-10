@@ -49,7 +49,8 @@ const Register = () => {
 
                         password: Yup.string()
                           .trim()
-                          .required("Password Cannot be empty"),
+                          .required("Password Cannot be empty")
+                          .min(8, "Password should be at least 8 chars long"),
 
                         confirmPassword: Yup.string()
                           .trim()

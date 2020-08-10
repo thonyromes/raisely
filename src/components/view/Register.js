@@ -88,6 +88,7 @@ const Register = () => {
                             })
                             .then(function (data) {
                               console.log(data);
+                              alert("Success, please check console");
                             })
                             .catch(function (error) {
                               console.log("Something went wrong.", error);
